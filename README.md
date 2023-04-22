@@ -8,7 +8,7 @@ __项目结构:__
 ```
 Sentiment Analysis
 
-├── LICENSE //开源证书
+├── LICENSE //开源许可
 ├── README.md //README文档
 ├── requirements.txt //依赖说明
 ├── main.py //启动脚本
