@@ -1,0 +1,14 @@
+\beamer@sectionintoc {1}{选题背景}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{校园集市概述}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{NLP情感极性分析}{5}{0}{1}
+\beamer@sectionintoc {2}{模型构建}{7}{0}{2}
+\beamer@subsectionintoc {2}{1}{数据来源}{7}{0}{2}
+\beamer@subsectionintoc {2}{2}{模型选择}{9}{0}{2}
+\beamer@subsectionintoc {2}{3}{模型验证}{11}{0}{2}
+\beamer@sectionintoc {3}{项目创新}{13}{0}{3}
+\beamer@subsectionintoc {3}{1}{集成学习的使用}{13}{0}{3}
+\beamer@subsectionintoc {3}{2}{Attention机制的使用}{15}{0}{3}
+\beamer@subsectionintoc {3}{3}{调整prompt验证模型}{17}{0}{3}
+\beamer@sectionintoc {4}{进度和难点}{19}{0}{4}
+\beamer@subsectionintoc {4}{1}{进度}{19}{0}{4}
+\beamer@subsectionintoc {4}{2}{难点}{21}{0}{4}

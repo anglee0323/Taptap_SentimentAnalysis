@@ -1,31 +1,86 @@
 # 2022年手游市场满意度调研
 这是YNU2023春季课程《机器学习》的期末大作业。
 
-本项目基于国内最大的移动手机游戏论坛TapTap，爬取手游用户评论，分析2022年手游市场的满意度。
+项目基于国内最大的移动手机游戏论坛TapTap，爬取手游用户评论，分析2022年手游市场的满意度。
 
-## 项目结构
 
+## 目录
+- [一、快速开始](#一快速开始)
+- [二、项目结构](#二项目结构)
+- [三、数据集说明](#三数据集说明)
+- [四、模型选择](#四模型选择)
+- [五、实验结果](#五实验结果)
+- [六、版权声明](#六版权声明)
+
+
+## 一、快速开始
+1. 克隆项目到本地
+```
+git clone https://github.com/anglee2002/SentimentAnalysis.git
+```
+2. 配置python环境并安装相关依赖(建议使用conda环境)
+```
+# 在项目根目录下执行:
+# 创建conda环境,并指定python版本为3.8及以上
+conda create -n sentimentanalysis python=3.8
+# 激活环境
+conda activate sentimentanalysis
+# 安装依赖
+pip install -r requirements.txt
+```
+3. 运行程序
+```
+请更改src目录下的python程序中的数据集路径,然后在项目根目录下执行:
+
+python src/*/*.py
+```
+4. 附加说明
+```
+1. 本实验设备为MacBook Pro 2020(m1 Apple silicon)，系统为macOS Ventura 13.2 (22D49)。
+   由于硬件兼容问题,没有测试Windows系统,但理论上可以运行。
+2. 本实验的tensorflow为ARM版本,由于tensorflow的原因,可能会出现一些警告,但是不影响运行。
+3. 本实验的bert模型为中文版,由于模型文件过大,没有上传,请自行下载。
+4. 若运行出现问题,请在issue中提出,或联系473394227@mail.ynu.edu.cn。
+```
+
+
+## 二、项目结构
 ```
 Sentiment Analysis
 
 ├── LICENSE //开源许可
 ├── README.md //README文档
 ├── requirements.txt //依赖说明
-├── main.py //启动脚本
 ├── dataset //数据集
+│   └── taptap_review //TapTap评论数据集
 ├── src //源代码
-│   └── __init__.py //配置文件
-│   └── data_processing //数据处理
 │   └── sentiment_dictionary //情感字典
+│       └── sentiment_dictionary.py //情感字典python程序
+│       └── 情感极性词典
+│           └── 中文停用词.txt
+│           └── 否定词.txt
+│           └── 程度副词.txt
+│           └── BosonNLP //boson情感词典
+│               └── BosonNLP_sentiment_score.txt
+│               └── license.txt 
+│               └── README.txt
+│           └── 词典来源说明.txt
 │   └── machine_learning //机器学习
+│           └── svm.py //支持向量机
+│           └── naive_bayes.py //朴素贝叶斯
+│           └── adaboost.py //集成学习
 │   └── deep_learning //深度学习
+│       └── bi_lstm.py //Bi-LSTM模型
+│       └── attention_lstm.py //LSTM模型+Attention机制
 │   └── transfer Learning //迁移学习
+│       └── finetune_bert.py //bert模型微调
 └── reoprt //报告
-    └── report.tex //tex文件
-    └── reoprt.pdf //pdf文件
+    └── 开题报告（由于数据集问题，以弃用该方案，请参考终期报告）
+    └── 终期报告
 ```
 
-## 数据来源
+
+## 三、数据集说明
 
 本次实验数据集来自[PP飞桨公开数据集](https://aistudio.baidu.com/aistudio/datasetdetail/183272)。
 
@@ -36,9 +91,9 @@ Sentiment Analysis
 
 ```
 【数据集结构】
-taptap_review
-├── test.csv #1466条数据
-└── train.csv #3422条数据
+taptap_review # 4888条数据,按照7:3划分训练集和测试集
+├── train.csv #3422条数据
+└── test.csv #1466条数据
 
 【数据注释】
 review：评论文本
@@ -46,24 +101,35 @@ sentiment：0代表不满意，1代表满意
 ```
 
 
-## 算法部分
+## 四、模型选择
 
 1.基于情感词典的情感极性分析
 
+      (1)基于BosonNLP的情感分析
 2.基于机器学习的情感极性分析
      
-      (1)Bayes #朴素贝叶斯
+      (1)Svm #支持向量机
      
-      (2)svm #支持向量机
+      (2)Naive_bayes #朴素贝叶斯
       
       (3)Adaboost #集成学习
 3.基于深度学习的情感极性分析
       
-      (1)LSTM模型
+      (1)Bi-LSTM模型
       
       (2)LSTM模型+Attention机制
-3.基于迁移学习的情感极性分析
+4.基于迁移学习的情感极性分析
       
       (1)bert模型微调
-      
-      (2)Chatgpt模型微调
+
+## 五、实验结果
+
+
+## 六、版权声明
+云南大学校徽、图片(ynu.jpg等)版权归[云南大学](https://www.ynu.edu.cn/)所有。
+
+BosonNLP情感词典由[玻森数据](https://bosonnlp.com/)授权使用。
+
+Bert模型版权由[谷歌公司](https://www.google.com/)所有。
+
+其他部分根据[MIT License](LICENSE)开源。
