@@ -77,6 +77,11 @@ Sentiment Analysis
 └── reoprt //报告
     └── 开题报告（由于数据集问题，以弃用该方案，请参考终期报告）
     └── 终期报告
+        └── fig //报告中的图片
+        └── reference.bib //参考文献
+        └── report.tex //LaTeX源文件
+        └── 基于多种方式实现的2022年中国手机游戏满意度分析.pdf
+            
 ```
 
 
@@ -124,7 +129,7 @@ sentiment：0代表不满意，1代表满意
 
 ## 五、实验结果
 
-
+![](https://raw.githubusercontent.com/anglee2002/Picbed/main/screenshot2023-06-30%2003.32.35.png)
 ## 六、版权声明
 云南大学校徽、图片(ynu.jpg等)版权归[云南大学](https://www.ynu.edu.cn/)所有。
 
