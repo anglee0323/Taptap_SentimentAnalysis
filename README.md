@@ -75,12 +75,14 @@ Sentiment Analysis
 │   └── transfer Learning //迁移学习
 │       └── finetune_bert.py //bert模型微调
 └── reoprt //报告
-    └── 开题报告（由于数据集问题，以弃用该方案，请参考终期报告）
-    └── 终期报告
-        └── fig //报告中的图片
-        └── reference.bib //参考文献
-        └── report.tex //LaTeX源文件
-        └── 基于多种方式实现的2022年中国手机游戏满意度分析.pdf
+│   └── 开题报告（由于数据集问题，以弃用该方案，请参考终期报告）
+│   └── 终期报告
+│       └── fig //报告中的图片
+│       └── reference.bib //参考文献
+│       └── report.tex //LaTeX源文件
+│       └── 基于多种方式实现的2022年中国手机游戏满意度分析.pdf
+└── 参考文献 
+└── 答辩ppt
             
 ```
 
