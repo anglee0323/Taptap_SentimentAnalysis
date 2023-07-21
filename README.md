@@ -1,5 +1,4 @@
 # 2022年手游市场满意度调研
-这是YNU2023春季课程《机器学习》的期末大作业。
 
 本项目基于国内最大的移动手机游戏论坛TapTap，爬取手游用户评论，使用多种方法分析2022年手游市场的满意度。
 
@@ -133,7 +132,6 @@ sentiment：0代表不满意，1代表满意
 
 ![](https://raw.githubusercontent.com/anglee2002/Picbed/main/screenshot2023-06-30%2003.32.35.png)
 ## 六、版权声明
-云南大学校徽、图片(ynu.jpg等)版权归[云南大学](https://www.ynu.edu.cn/)所有。
 
 BosonNLP情感词典由[玻森数据](https://bosonnlp.com/)授权使用。
 
