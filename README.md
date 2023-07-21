@@ -52,36 +52,27 @@ Sentiment Analysis
 ├── requirements.txt //依赖说明
 ├── dataset //数据集
 │   └── taptap_review //TapTap评论数据集
-├── src //源代码
-│   └── sentiment_dictionary //情感字典
-│       └── sentiment_dictionary.py //情感字典python程序
-│       └── 情感极性词典
-│           └── 中文停用词.txt
-│           └── 否定词.txt
-│           └── 程度副词.txt
-│           └── BosonNLP //boson情感词典
-│               └── BosonNLP_sentiment_score.txt
-│               └── license.txt 
-│               └── README.txt
-│           └── 词典来源说明.txt
-│   └── machine_learning //机器学习
-│           └── svm.py //支持向量机
-│           └── naive_bayes.py //朴素贝叶斯
-│           └── adaboost.py //集成学习
-│   └── deep_learning //深度学习
-│       └── bi_lstm.py //Bi-LSTM模型
-│       └── attention_lstm.py //LSTM模型+Attention机制
-│   └── transfer Learning //迁移学习
-│       └── finetune_bert.py //bert模型微调
-├── reoprt //报告
-│   └── 开题报告（由于数据集问题，以弃用该方案，请参考终期报告）
-│   └── 终期报告
-│       └── fig //报告中的图片
-│       └── reference.bib //参考文献
-│       └── report.tex //LaTeX源文件
-│       └── 基于多种方式实现的2022年中国手机游戏满意度分析.pdf
-├── 参考文献 
-└── 答辩ppt
+└── src //源代码
+    └── sentiment_dictionary //情感字典
+        └── sentiment_dictionary.py //情感字典python程序
+        └── 情感极性词典
+            └── 中文停用词.txt
+            └── 否定词.txt
+            └── 程度副词.txt
+            └── BosonNLP //boson情感词典
+                └── BosonNLP_sentiment_score.txt
+                └── license.txt 
+                └── README.txt
+            └── 词典来源说明.txt
+    └── machine_learning //机器学习
+           └── svm.py //支持向量机
+            └── naive_bayes.py //朴素贝叶斯
+            └── adaboost.py //集成学习
+    └── deep_learning //深度学习
+        └── bi_lstm.py //Bi-LSTM模型
+        └── attention_lstm.py //LSTM模型+Attention机制
+    └── transfer Learning //迁移学习
+        └── finetune_bert.py //bert模型微调
             
 ```
 
