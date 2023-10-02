@@ -39,7 +39,7 @@ python src/*/*.py
    由于硬件兼容问题,没有测试Windows系统,但理论上可以运行。
 2. 本实验的tensorflow为ARM版本,由于tensorflow的原因,可能会出现一些警告,但是不影响运行。
 3. 本实验的bert模型为中文版,由于模型文件过大,没有上传,请自行下载。
-4. 若运行出现问题,请在issue中提出,或联系473394227@mail.ynu.edu.cn。
+4. 若运行出现问题,请在issue中提出。
 ```
 
 
@@ -65,7 +65,7 @@ Sentiment Analysis
                 └── README.txt
             └── 词典来源说明.txt
     └── machine_learning //机器学习
-           └── svm.py //支持向量机
+            └── svm.py //支持向量机
             └── naive_bayes.py //朴素贝叶斯
             └── adaboost.py //集成学习
     └── deep_learning //深度学习
